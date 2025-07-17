@@ -79,7 +79,7 @@ def main(target_width, target_height):
     output_dir = base_dir / "export"
     if not input_dir.exists():
         input_dir.mkdir()
-        print(f"Created input directory: {input_dir}")
+        print(f"创建输入文件夹: {input_dir}")
         return
     output_dir.mkdir(exist_ok=True)
     process_directory(input_dir, output_dir, target_width, target_height)
